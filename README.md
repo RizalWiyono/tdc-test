@@ -1,6 +1,17 @@
-# Nama Proyek
+# Test TDC
 
-Deskripsi singkat tentang proyekmu.
+Test TDC
+
+## Akun
+- Email:
+    ```bash
+    rizal@tdc.com
+    ```
+
+- Password:
+    ```bash
+    123
+    ```
 
 ## Instalasi
 
