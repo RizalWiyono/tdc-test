@@ -1,39 +1,98 @@
-## Pindah ke direktori repo-be (proyek Laravel)
-cd repo-be/
+# Nama Proyek
 
-## Install dependencies menggunakan Composer
-composer install
+Deskripsi singkat tentang proyekmu.
 
-## Buat file .env berdasarkan file .env.example
-cp .env.example .env
+## Instalasi
 
-## Generate key aplikasi
-php artisan key:generate
+### Backend (repo-be)
 
-## Lakukan migrasi database
-php artisan migrate
+1. Pindah ke Direktori `repo-be`
+    ```bash
+    cd repo-be/
+    ```
+    Pindah ke direktori proyek Laravel untuk melakukan langkah-langkah berikutnya.
 
-## Jalankan perintah seeding untuk mengisi data awal ke dalam database (jika ada)
-php artisan db:seed
+2. Instalasi Dependencies menggunakan Composer
+    ```bash
+    composer install
+    ```
+    Composer akan mengunduh dan menginstal semua dependencies yang diperlukan untuk proyek.
 
-## Jalankan server
-php artisan serve
+3. Konfigurasi File Lingkungan
+    ```bash
+    cp .env.example .env
+    ```
+    Salin file `.env.example` menjadi `.env` untuk konfigurasi aplikasi.
 
-------------------
+4. Generate Kunci Aplikasi
+    ```bash
+    php artisan key:generate
+    ```
+    Menghasilkan kunci aplikasi yang diperlukan.
 
-## Pindah ke direktori repo-fe
-cd repo-fe/
+5. Migrasi Database
+    ```bash
+    php artisan migrate
+    ```
+    Melakukan migrasi struktur database yang diperlukan.
 
-## Copy template .env.example menjadi .env
-cp .env.example .env
+6. Seeding Database (Opsional)
+    ```bash
+    php artisan db:seed
+    ```
+    Jalankan perintah seeding untuk mengisi data awal ke dalam database jika diperlukan.
 
-## Buka file .env dan atur URL_BACKEND sesuai dengan URL backend repo-be (Laravel)
+7. Jalankan Server
+    ```bash
+    php artisan serve
+    ```
+    Memulai server untuk menjalankan aplikasi backend.
 
-## Kembali ke direktori utama repo-fe jika Anda belum berada di sana
-cd repo-fe/
+### Frontend (repo-fe)
 
-## Install dependencies
-npm install
+1. Pindah ke Direktori `repo-fe`
+    ```bash
+    cd repo-fe/
+    ```
+    Pindah ke direktori proyek frontend untuk langkah-langkah berikutnya.
 
-## Jalankan aplikasi frontend
-npm start
+2. Konfigurasi File Lingkungan
+    ```bash
+    cp .env.example .env
+    ```
+    Salin file `.env.example` menjadi `.env` untuk konfigurasi aplikasi frontend.
+
+3. Atur URL Backend
+    Buka file `.env` dan atur variabel `URL_BACKEND` sesuai dengan URL backend dari repo-be (Laravel).
+
+4. Installasi Dependencies
+    ```bash
+    npm install
+    ```
+    Mengunduh dan menginstal semua dependencies yang diperlukan untuk proyek frontend.
+
+5. Jalankan Aplikasi Frontend
+    ```bash
+    npm start
+    ```
+    Menjalankan aplikasi frontend.
+
+## Penggunaan
+
+Cara menggunakan proyek atau beberapa instruksi dasar untuk memulai proyek ini.
+
+## Kontribusi
+
+Jika ada langkah-langkah untuk berkontribusi ke proyek, atau cara berkolaborasi, jelaskan di sini.
+
+## Lisensi
+
+Jika proyekmu menggunakan lisensi tertentu, cantumkan informasi lisensi di sini.
+
+## Penulis
+
+Tambahkan informasi tentang penulis proyek jika relevan.
+
+## Catatan Tambahan
+
+Tambahkan catatan tambahan atau informasi penting lainnya tentang proyek jika diperlukan.
